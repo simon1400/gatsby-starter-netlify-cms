@@ -30,7 +30,6 @@ export default class BlogIndexPage extends React.Component {
                 </h1>
               </div>
             </div>
-              // <BlogRoll />
             </div>
         </section>
       </Layout>
