@@ -6,24 +6,13 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "article"
-    label: "Clanky"
-    folder: "src/pages/article"
+  - name: "menuTop"
+    label: "Menu top"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "recenze"
-    label: "Recenze"
-    folder: "src/pages/recenze"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Nazev", name: "name", widget: "string"}
+      - {label: "Link", name: "link", widget: "string"}
 
   - name: "pages"
     label: "Stranky"
