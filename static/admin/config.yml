@@ -9,6 +9,7 @@ collections:
   - name: "menuTop"
     label: "Menu top"
     create: true
+    file: "src/component/Navbar.js"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Nazev", name: "name", widget: "string"}
