@@ -1,0 +1,17 @@
+$default-font: "calps-light", sans-serif;
+$font-bold: "calps-bold", sans-serif;
+$accent: #C5A45A;
+$text: #646363;
+
+$header: #646363;
+
+$spacing_small: 1px;
+$spacing_big: 2px;
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+$gutter: $grid-gutter-width;

@@ -1,10 +1,11 @@
+/* eslint-disable */
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+// import Features from '../components/Features'
+// import BlogRoll from '../components/BlogRoll'
 
 export const IndexPageTemplate = ({
   image,
@@ -16,99 +17,95 @@ export const IndexPageTemplate = ({
   intro,
   main,
 }) => (
-    <div>
-        <div
-          className="full-width-image margin-top-0"
-          style={{
-            backgroundImage: `url(${
-              !!image.childImageSharp
-                ? image.childImageSharp.fluid.src
-                : image
-            })`,
-            backgroundPosition: `top left`,
-            backgroundAttachment: `fixed`,
-          }}
-    >
-  <div style={{
-        display: 'flex',
-        height: '150px',
-        lineHeight: '1',
-        justifyContent: 'space-around',
-        alignItems: 'left',
-        flexDirection: 'column' }}>
-      <h1
-        className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-        style={{
-          boxShadow: 'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-          backgroundColor: 'rgb(255, 68, 0)',
-          color: 'white',
-          lineHeight: '1',
-          padding: '0.25em'
-        }}
-      >
-        {title}
-      </h1>
-      <h3 className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow: 'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em'
-          }}
-      >
-        {subheading}
-      </h3>
-      </div>
-    </div>
-  <section className="section section--gradient">
-    <div className="container">
-      <div className="section">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="content">
-              <div className="content">
-                <div className="tile">
-                  <h1 className="title">{mainpitch.title}</h1>
-                </div>
-                <div className="tile">
-                  <h3 className="subtitle">{mainpitch.description}</h3>
-                </div>
-              </div>
-              <div className="columns">
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    {heading}
-                  </h3>
-                  <p>{description}</p>
-                </div>
-              </div>
-              <Features gridItems={intro.blurbs} />
-              <div className="columns">
-              <div className="column is-12 has-text-centered">
-                <Link className="btn" to="/products">
-                  See all products
-                </Link>
-                </div>
-              </div>
-              <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                  <Link className="btn" to="/blog">
-                    Read more
-                  </Link>
-                  </div>
-              </div>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  </div>
+  <main id="main">
+  	<section class="section_1" uk-parallax="bgy: -200">
+  		<div class="uk-container">
+  			<h2 class="accent_head" uk-parallax="y: -100, 100">cafe super</h2>
+  			<div class="uk-grid uk-child-width-1-1 uk-child-width-1-2@s">
+  				<div>
+  					<div class="content_img">
+  						<img src="/img/foto1.jpg" alt="" />
+  					</div>
+  				</div>
+  				<div>
+  					<div class="content_wrap">
+  						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A possimus, dolorum distinctio optio error porro eaque quibusdam voluptatem aspernatur iste repellat deserunt suscipit. Nostrum, ad aperiam, perferendis rerum totam voluptatibus!</p>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</section>
+
+
+  	<section class="section_2" uk-parallax="bgy: -300">
+  		<div class="uk-container-expand">
+  			<h2 class="accent_head" uk-parallax="y: -100, 100">aromabar</h2>
+  			<div class="uk-grid">
+  				<div class="uk-width-1-1 uk-width-2-5@s">
+  					<div class="content_wrap">
+  						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A possimus, dolorum distinctio optio error porro eaque quibusdam voluptatem aspernatur iste repellat deserunt suscipit. Nostrum, ad aperiam, perferendis rerum totam voluptatibus!</p>
+  					</div>
+  				</div>
+  				<div class="uk-width-1-1 uk-width-3-5@s">
+  					<div class="content_img">
+  						<img class="uk-width-1-1" src="/img/foto1.jpg" alt="" />
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</section>
+
+  	<section class="section_3" uk-parallax="bgx: -50">
+  		<h2 class="accent_head" uk-parallax="y: -100, 100">club party</h2>
+
+  		<div class="uk-container">
+  			<div class="uk-grid">
+  				<div class="uk-width-1-1 uk-width-2-5@s">
+  					<div class="content_img">
+  						<img src="/img/foto1.jpg" alt="" />
+  					</div>
+  				</div>
+  				<div class="uk-width-1-1 uk-width-3-5@s">
+  					<div class="content_wrap">
+  						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A possimus, dolorum distinctio optio error porro eaque quibusdam voluptatem aspernatur iste repellat deserunt suscipit. Nostrum, ad aperiam, perferendis rerum totam voluptatibus!</p>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</section>
+
+  	<section class="section_4" uk-parallax="bgx: -50">
+  		<h2 class="accent_head" uk-parallax="y: -100, 100">follow us</h2>
+  		<div class="uk-container">
+  			<div class="uk-grid uk-grid-large uk-child-width-1-1 uk-child-width-1-3@s facebook_ap">
+  				<div>
+  					<div class="content_img">
+  						<img src="/img/foto1.jpg" alt="" />
+  					</div>
+  					<div class="content_wrap">
+  						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A possimus, dolorum distinctio optio error porro eaque quibusdam voluptatem aspernatur iste repellat deserunt suscipit. Nostrum, ad aperiam, perferendis rerum totam voluptatibus!</p>
+  					</div>
+  				</div>
+  				<div>
+  					<div class="content_wrap">
+  						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A possimus, dolorum distinctio optio error porro eaque quibusdam voluptatem aspernatur iste repellat deserunt suscipit. Nostrum, ad aperiam, perferendis rerum totam voluptatibus!</p>
+  					</div>
+  					<div class="content_img">
+  						<img src="/img/foto1.jpg" alt="" />
+  					</div>
+  				</div>
+  				<div>
+  					<div class="content_img">
+  						<img src="/img/foto1.jpg" alt="" />
+  					</div>
+  					<div class="content_wrap">
+  						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A possimus, dolorum distinctio optio error porro eaque quibusdam voluptatem aspernatur iste repellat deserunt suscipit. Nostrum, ad aperiam, perferendis rerum totam voluptatibus!</p>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</section>
+  </main>
 )
 
 IndexPageTemplate.propTypes = {

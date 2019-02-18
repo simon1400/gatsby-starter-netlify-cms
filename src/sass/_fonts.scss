@@ -1,0 +1,4 @@
+@import "_mixins/font-face";
+
+@include font-face("calps-bold", "../fonts/calps-bold/37A5EE_0_0", bold);
+@include font-face("calps-light", "../fonts/calps-light/37A5EE_1_0", lighter);
