@@ -11,7 +11,6 @@ collections:
     create: true
     folder: "src/menu/menu-top"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Nazev", name: "name", widget: "string"}
       - {label: "Link", name: "link", widget: "string"}
 
